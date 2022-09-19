@@ -1,0 +1,94 @@
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #eee;
+  font-family: "Montserrat", sans-serif;
+}
+
+.weekDay {
+  border: 1px solid #eee;
+  background-color: rgba(4, 166, 166, 0.76);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.weekDay__title {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background-color: rgb(139, 161, 179);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  border: 1px solid #ddd;
+}
+.section {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(150px, 400px));
+  grid-gap: 10px;
+  margin: 20px;
+}
+.section__header {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+.container {
+  margin: 0 auto;
+  max-width: 900px;
+  -webkit-box-shadow: 7px 0px 59px 16px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 7px 0px 59px 16px rgba(66, 68, 90, 1);
+  box-shadow: 7px 0px 59px 16px rgba(66, 68, 90, 1);
+}
+.section__tasks {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid rgb(84, 111, 131);
+  border-radius: 10px;
+  background-color: rgb(139, 161, 179);
+  -webkit-box-shadow: 0px 1px 51px 1px rgba(146, 165, 183, 1);
+  -moz-box-shadow: 0px 1px 51px 1px rgba(146, 165, 183, 1);
+  box-shadow: 0px 1px 51px 1px rgba(146, 165, 183, 1);
+}
+.form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+.section__button {
+  border: none;
+  background-color: rgb(54, 69, 92);
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+}
+.section__button:hover {
+  background-color: hsl(216, 26%, 35%);
+}
+.section__button:active {
+  background-color: hsl(216, 26%, 45%);
+}
+.section__input {
+  padding: 10px;
+}
+.section__select {
+  background-color: teal;
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+}
+.section__select:hover {
+  background-color: hsl(180, 100%, 35%);
+}
+.section__subheader {
+  text-align: center;
+}
