@@ -20,6 +20,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
 .weekDay__title {
   grid-column-start: 1;
   grid-column-end: 4;
@@ -30,11 +31,22 @@ body {
   margin: 0;
   border: 1px solid #ddd;
 }
+@media (max-width: 767px) {
+  .weekDay__title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
 .section {
   display: grid;
   grid-template-columns: repeat(3, minmax(150px, 400px));
   grid-gap: 10px;
   margin: 20px;
+}
+@media (max-width: 767px) {
+  .section {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .section__header {
   margin: 10px;
@@ -63,6 +75,11 @@ body {
   grid-template-columns: 1fr auto;
   grid-gap: 10px;
   padding: 10px;
+}
+@media (max-width: 767px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
 }
 .section__button {
   border: none;
